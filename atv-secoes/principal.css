@@ -48,7 +48,7 @@ section{
     justify-content: center;
     margin-top: 1.5em;
 }
-div{
+section>div{
     margin: 1.5em;
     background-color: white;
     padding: 1em;
@@ -126,6 +126,7 @@ img[src="imagens/calendario.png"]{
 }
 div.eventos{
     height: 26em;
+    display: block;
 }
 aside div h2{
     font-family: 'Roboto Condensed', sans-serif;
@@ -153,4 +154,14 @@ figure{
 }
 div p.info{
     color: grey;
+    margin-bottom: 0.5em;
+}
+div.info2{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+div.enquete{
+    display: block;
 }
