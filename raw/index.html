@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Raw</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="principal.css" />
+
+        <script>
+            function abrir(){
+                document.getElementById('menu').style.visibility = 'visible';
+                document.getElementById('esmaecer').style.visibility = 'visible';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="esmaecer"></div>
+        <header>
+            <h1>
+                <img src="imagens/logo.png" title="Raw - Comida Natural" alt="Logo do restaurante Raw Comida Natural"/>
+            </h1>
+            <nav>
+                <ol>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="">Reservas</a></li>
+                    <li><a href="">Contato</a></li>
+                </ol>
+                <div>
+                    <button onclick="abrir()"><img src="imagens/barra-de-menu.png"></button>
+                    <ol id="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre nós</a></li>
+                        <li><a href="">Cardápio</a></li>
+                        <li><a href="">Reservas</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ol>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <picture>
+                <source srcset="imagens/destaque.png" media="(min-width:1440px">
+                <source srcset="imagens/destaquemed.png" media="(min-width:850px">
+                <img src="imagens/destaquepeq.png" alt="Prato de bifum com vegetais e um par de hashis"/>
+            </picture>
+            <h2>Home</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Morbius cum odio corrupti distinctio officia excepturi recusandae illo ratione dignissimos praesentium in laborum rem hic provident non qui, consequuntur doloremque adipisci voluptas.</p>
+        </main>
+        <footer>
+            <address>Rua Olinto Meira, 379, Cidade Alta</address>
+        </footer>
+    </body>
+</html>
