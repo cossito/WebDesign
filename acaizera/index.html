@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Açaizera</title>
+        <link rel=stylesheet href="principal.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+        <script>
+            function abrir() {
+                if (document.getElementById('menu').style.display == 'flex')
+                    document.getElementById('menu').style.display = 'none';
+                else
+                    document.getElementById('menu').style.display = 'flex';
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="index.html"><img src="imagens/logo3.png" /></a>
+            </h1>
+            <nav>
+                <div>
+                    <ol>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li>
+                        <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                        <li><a href=""><img src="imagens/cart-svgrepo-com 1.png" width="25px"/></a></li>
+                    </ol>
+                    <button onclick="abrir()"><img href="" src="imagens/menu.png"/></button>
+                </div>
+            </nav>
+            <ol id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href=""><img src="imagens/cart-svgrepo-com 1.png" width="25px"/></a></li>
+            </ol>
+        </header>
+        <main>
+            <section class="bg">
+                <h2>O MELHOR AÇAÍ DO NORDESTE!</h2>
+            </section>
+            <section class="form1">
+                <h3>MONTE SEU AÇAÍ</h3>
+                <form>
+                    <fieldset>
+                        <div>
+                            <span>RECIPIENTE: </span>
+                            <label><input type="radio" name="recip" value="copo" /> COPO</label>
+                            <label><input type="radio" name="recip" value="pote" /> POTE</label>
+                        </div>
+                        <div>
+                            <label for="calda">CALDA: </label>
+                            <select id="calda">
+                                <option value="lcondensado">LEITE CONDENSADO</option>
+                                <option value="chocolate">CHOCOLATE</option>
+                                <option value="caramelo">CARAMELO</option>
+                                <option value="mel">MEL</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="add">
+                            <label><input type="checkbox" name="extra" value="prog" /> GRANOLA</label>
+                            <label><input type="checkbox" name="extra" value="design" /> OVOMALTINE</label>
+                            <label><input type="checkbox" name="extra" value="manutencao" /> LEITE NINHO</label>
+                            <label><input type="checkbox" name="extra" value="prog" /> BANANA</label>
+                            <label><input type="checkbox" name="extra" value="design" /> CREME DE NINHO</label>
+                            <label><input type="checkbox" name="extra" value="manutencao" /> CEREAL</label>
+                            <label><input type="checkbox" name="extra" value="prog" /> M&M'S</label>
+                            <label><input type="checkbox" name="extra" value="design" /> FARINHA LÁCTEA</label>
+                            <label><input type="checkbox" name="extra" value="manutencao" /> MORANGO</label>
+                            <label><input type="checkbox" name="extra" value="prog" /> CREME DE MORANGO</label>
+                            <label><input type="checkbox" name="extra" value="design" /> AVEIA</label>
+                            <label><input type="checkbox" name="extra" value="manutencao" /> GOTAS DE CHOCOLATE</label>
+                            <label><input type="checkbox" name="extra" value="prog" /> ACHOCOLATADO</label>
+                            <label><input type="checkbox" name="extra" value="design" /> KIWI</label>
+                            <label><input type="checkbox" name="extra" value="manutencao" /> CREME DE CHOCOLATE</label>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="IR PARA O PEDIDO" />
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>© Copyright 2023.  Açaizera</p>
+            <ul>
+                <li>
+                    <a href=""><img src="imagens/twitter.png" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="imagens/insta.png" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="imagens/whatsapp.png" /></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

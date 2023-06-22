@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Kaiju - Comidas Japonesas</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="principal.css">
+        <script>
+            function abrir() {
+                if (document.getElementById('contato').style.right == '-30em') {
+                    document.getElementById('contato').style.right = '0';
+                }
+                else {
+                    document.getElementById('contato').style.right = '-30em';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="opac"></div>
+        <header>
+            <nav>
+                <ol>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="">Pedidos</a></li>
+                    <li onclick="abrir()">Contato</li>
+                </ol>
+            </nav>
+            <div id="contato" style="right: -30em;">
+                <h2>Contato</h2>
+                <p>Loja Kaiju Sushi - Natal</p>
+                <p>(00) 0000-0000</p>
+                <hr>
+                <p>Loja Kaiju Sushi - João Pessoa</p>
+                <p>(00) 0000-0000</p>
+                <hr>
+                <p>Loja Kaiju Sushi - Maceió</p>
+                <p>(00) 0000-0000</p>
+    
+                <h2>Crie sua conta aqui</h2>
+                <form>
+                    <div>
+                        <input type="text" id="nome" placeholder="Nome" required>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="E-mail" required>
+                    </div>
+                    <div>
+                        <input type="tel" id="telefone" placeholder="Telefone" required>
+                    </div>
+                    <div>
+                        <span class="tooltip">(min. 7 dígitos)</span>
+                        <input type="password" id="senha" placeholder="Senha" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Criar conta" />
+                    </div>
+                </form>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div></div>
+                <h1>
+                    <a href=""><img src="imagens/logokaiju.svg" /></a>
+                </h1>
+            </section>
+            <section>
+                <picture>
+                    <img src="imagens/comer-sushi-e-realmente-saudavel 1.png" alt="Uramaki com Kani-kama e manga"/>
+                </picture>
+                <div>
+                    <h2>Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales augue quis consequat lacinia. Nullam id efficitur orci. Nullam ut interdum sem. Etiam sodales eu orci imperdiet pellentesque. Fusce a efficitur urna. Curabitur ex ante, ultrices sit amet varius eu, viverra quis ligula. Duis nec elit nunc. Cras ullamcorper ante risus, quis elementum justo ornare quis. Sed in augue vel justo feugiat tristique. Sed ultrices leo eros, sed volutpat libero imperdiet ut.</p>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam imperdiet metus sed placerat consectetur. Morbi sit amet luctus dui. Quisque aliquet sed odio vitae cursus. Fusce non malesuada eros. Nam molestie semper sem. Morbi a est efficitur, vehicula ante a, accumsan dolor. Aliquam a convallis nunc. Vivamus eros turpis, luctus vitae pulvinar eu, tempor sit amet nunc. Praesent risus mi, convallis placerat turpis ut, faucibus ultrices ipsum. Praesent ullamcorper dignissim eros sed finibus. Proin mi metus, sodales ac risus non, rutrum aliquet lectus. Morbi mauris odio, dignissim nec auctor sed, vehicula in nisl.</p>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <a href=""><img src="imagens/ginger-sushi-novo-restaurante-japones-na-barra-scaled-e1615242484899 2.png" /></a>
+                    <h2>Natal - RN</h2>
+                </div>
+                <div class="card">
+                    <a href=""><img src="imagens/suechinorlando-1 2.png" /></a>
+                    <h2>Bayeux - PB</h2>
+                </div>
+                <div class="card">
+                    <a href=""><img src="imagens/tata-sushi-noodle-bar-037 2.png" /></a>
+                    <h2>Maceió - AL</h2>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>©Copyright 2022. Kaiju</p>
+            <ul>
+                <li>
+                    <a href=""><img src="imagens/twitter.png" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="imagens/instagram.png" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="imagens/whatsapp.png" /></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

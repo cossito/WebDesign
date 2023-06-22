@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    padding: 2em;
+    border-bottom: 0.4em solid #5F2165;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 a img{
+    width: 6em;
+}
+header nav ol{
+    display: flex;
+    align-content: center;
+}
+header nav ol li{
+    margin: 1em;
+    height: 19px;
+}
+header nav ol li a{
+    text-decoration: none;
+    color: #5F2165;
+}
+section.bg{
+    background-image: url(imagens/background1.jpeg);
+    padding: 3em;
+    height: 47em;
+    background-size: cover;
+    justify-content: end;
+    flex-direction: row;
+}
+section.bg h2{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-size: 7em;
+    width: 5em;
+    text-shadow: 2px 2px 4px #000000;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+h3{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: #5F2165;
+    font-size: 2.2em;
+    margin: 0.5em auto;
+    background-image: url(imagens/folha2.png), url(imagens/folha1.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 0.9em, 0.9em;
+    padding: 0 0.7em 0 0.7em;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+section.form1{
+    width: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+section.form1 form fieldset{
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+section.form1 form fieldset div{
+    padding: 0.5em;
+    color: #565454;
+}
+section.form1 form fieldset div label{
+    padding: 0.5em;
+}
+section.form1 form fieldset div select{
+    padding: 0.5em;
+    color: #565454;
+}
+section.form1 form fieldset div.add{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: center;
+    height: 13em;
+}
+section.form1 form fieldset div.add label{
+    margin: 0.2em;
+}
+section.form1 form fieldset div.add label input{
+    margin: 0.2em;
+}
+form input[type=submit]{
+    background-color: #5F2165;
+    color: white;
+    padding: 1em;
+    border: none;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+footer{
+    padding: 2em;
+    background-color: #5F2165;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    margin: 0.8em;
+}
+footer ul li a img{
+    width: 1.7em;
+}
+section.cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70em;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+div.card{
+    border: 3px solid #5F2165;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17em;
+    margin: 2em;
+    height: 22em;
+}
+div.card p{
+    background-color: #5F2165;
+    color: white;
+    width: 15em;
+    padding: 1em;
+}
+section.cards div.card p:nth-child(3){
+    padding: 0 1em 1em 1em;
+}
+section.cards div.card p:nth-child(3) a{
+    color: white;
+    text-decoration: none;
+}
+div.card figure img{
+    width: 15.5em;
+}
+section > div.row{
+    width: 70em;
+    padding: 2em;
+}
+div.row{
+    display: flex;
+    align-items: center;
+}
+div.row figure img{
+    width: 20em;
+    margin: 1em;
+    border-left: 4px solid #5F2165;
+}
+div.row figure img:nth-child(2){
+    border-left: none;
+    border-right: 4px solid #5F2165;
+}
+h4{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: #5F2165;
+    font-size: 2.2em;
+    margin: 0.5em;
+}
+div.row div p{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    color: #5F2165;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding-left: 0.3em;
+}
+hr{
+    border: 2px solid #D9D9D9;
+    width: 68em;
+    margin: 0 auto;
+}
+div.und{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 68em;
+    margin-top: 2em;
+}
+div.und div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.und div figure img{
+    width: 15em;
+    border-left: 4px solid #5F2165;
+}
+div.und div p{
+    color: #5F2165;
+    margin: 1em;
+}
+div.containerh3{
+    width: 100%;
+    text-align: center;
+}
+div.contato{
+    display: flex;
+    margin: 2em;
+    align-items: center;
+}
+div.contato div{
+    text-align: center;
+    padding: 2em;
+    width: 20em;
+}
+div.contato div p{
+    color: #7C7C7C;
+    margin: 0.5em;
+}
+div.contato div p:first-child{
+    color: #5F2165;
+}
+div.contato iframe{
+    border-right: 4px solid #5F2165;
+}
+section.msg form div label{
+    display: inline-block;
+    width: 7em;
+    text-align: right;
+    color: #7C7C7C;
+}
+section.msg form div textarea{
+    vertical-align: top;
+    padding: 0.5em;
+    width: 20em;
+    margin: 0 0.5em 3em 0.5em;
+    height: 8em;
+}
+section.msg form div input{
+    padding: 0.5em;
+    width: 20em;
+    margin: 0 0.5em;
+}
+section.msg form div{
+    margin: 0.5em;
+}
+ol#menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 8.1em;
+    border-left: 0.4em solid #5F2165;
+    border-bottom: 0.4em solid #5F2165;
+    background-color: white;
+    padding: 1em;
+}
+ol#menu li a{
+    color: #5F2165;
+    text-decoration: none;
+}
+ol#menu li{
+    margin: 0.5em;
+}
+button{
+    background: none;
+    border: none;
+    display: none;
+}
+button img{
+    width: 3em;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 540px){
+    header{
+        width: auto;
+    }
+    h1 a img{
+        width: 10em;
+    }
+    header nav div ol{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button{
+        display: block;
+    }
+    section.bg{
+        width: 100%;
+        justify-content: center;
+        padding: 1em 1em 3em 1em;
+    }
+    section.bg h2{
+        font-size: 6.1em;
+        width: 4em;
+    }
+    section.form1{
+        width: 100%;
+    }
+    section.form1 form fieldset div.add{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+    section.form1 form fieldset div.add label{
+        display: block;
+    }
+}
+
+/* ANIMAÇÕES */
+
+header ol li a:hover{
+    text-decoration: underline;
+}
+header ol li a img{
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+header ol li a:hover img{
+    transform: scale(1.13);
+}
+header{
+    animation-name: entra-header;
+    animation-duration: 0.4s;
+    animation-timing-function: ease;
+}
+@keyframes entra-header{
+    from{
+        margin-bottom: 60em;
+    }
+    to{
+        margin-bottom: 0em;
+    }
+}
+footer ul li a img{
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+footer ul li a:hover img{
+    transform: scale(1.13);
+}
+input[type=submit]{
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+input[type=submit]:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+section.cards div.card p:nth-child(3) a:hover{
+    text-decoration: underline;
+}
+div.und figure img{
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+div.und figure img:hover{
+    transform: scale(1.1);
+}

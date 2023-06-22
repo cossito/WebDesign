@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: ; */
+}
+body{
+    background-color: #E7E8DF;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    padding: 1em 2em;
+    background-color: #FCB13C;
+    
+}
+header div{
+    margin: 0 auto;
+    max-width: 90em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ol{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none;
+}
+header nav a{
+    color: #40190E;
+    text-decoration: none;
+}
+header nav ol li{
+    margin: 1em;
+    font-size: 2em;
+}
+header nav ol li:last-child{
+    margin-right: 0;
+}
+main{
+    background-color: #E7E8DF;
+    margin: 0 auto;
+    width: 100%;
+}
+main section{
+    margin: 0 auto;
+    max-width: 90em;
+}
+.home-secao1{
+    
+    padding: 2em;
+    height: 40em;
+    
+    background-color: #D88332;
+}
+.home-secao1 section{
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    height: 100%;
+    border-radius: 1em;
+    background-image: url("imagens/home/ovomenu.png");
+    background-size: cover;
+}
+.home-secao1 section div{
+    background-color: rgba(252, 177, 60, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
+}
+.home-secao1 a{
+    font-size: 2em;
+    text-decoration: none;
+    color: #40190E;
+}
+.home-secao1 h2{
+    font-size: 3em;
+    text-align: left;
+    
+    color: #38160C;
+}
+.home-secao2{
+    padding: 1em;
+    height: 8em;
+    background-color: #E7E8DF;
+}
+.home-secao2 h3{
+    margin-top: 1.5em;
+    font-size: 2em;
+    text-align: center;
+    color: #38160C;
+}
+.home-secao3{
+    padding: 1em;
+    background-image: url("imagens/home/padrao.png");
+}
+.home-secao3 section{
+    display: flex;
+    justify-content: space-between;
+}
+.home-secao3 section div{
+    border-radius: 1em;
+    color: #E7E8DF;
+    width: 35em;
+    background-color: #FA4437;
+}
+.home-secao3 h3{
+    margin: 1em;
+}
+.tabela{
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.tabela1{
+    margin-top: 1.5em;
+}
+.home-secao3 section div a{
+    text-decoration: none;
+    color: #E7E8DF;
+}
+.home-secao3 section div a:hover{
+    color: #E7E8DF;
+}
+.home-secao3 section img{
+    border-radius: 1em;
+}
+.home-secao4{
+    background-color: #E7E8DF;
+    height: 28em;
+}
+.home-secao4 h2, .home-secao4 p{
+    /* margin: 1em; */
+    padding: 1em;
+    color: #38160C;
+    text-align: center;
+}
+.home-secao4 h2{
+    font-size: 3em;
+}
+.home-secao4 p{
+    font-size: 2em;
+}
+footer{
+    margin-top: 5em;
+    padding: 2em;
+    background-color: #FCB13C;
+
+}
+footer div{
+    margin: 0 auto;
+    max-width: 90em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+footer img{
+    vertical-align: middle;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none;
+}
+footer ul li:last-child{
+    margin-left: 1em;
+}
+footer a{
+    text-decoration: none;
+    color: #40190E;
+}
+
+/* Cardápio */
+main > h2{
+    /* margin: 1em; */
+    padding: 1em;
+    font-size: 3em;
+    color:#38160C;
+    text-align: center;
+}
+ .cardapio{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}/*
+.cardapio div{
+    margin: 1em 16em;
+    padding: 1em;
+    background-color: #FA4437;
+    width: 8em;
+    height: 8em;
+    
+} */
+.cardapioItem{
+    text-align: center;
+    margin-bottom: 1em;
+    /* background-color: #FA4437; */
+    width: 25em;
+    height: 30em;
+}
+.cardapioItem p{
+    font-size: 1.5em;
+}
+.cardapioImg h3{
+    padding: 0.5em;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(252, 177, 60, 0.8);
+    border-radius: 0 0 0.5em 0.5em;
+}
+.cardapioImg{
+    display: flex;
+    align-items: flex-end;
+    border-radius: 1em;
+}
+.cardapioImg1{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/copomorango.png");
+    background-size: cover;
+}
+.cardapioImg2{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/copouva.png");
+    background-size: cover;
+}
+.cardapioImg3{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/copoferrero.png");
+    background-size: cover;
+}
+.cardapioImg4{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/copobrownie.png");
+    background-size: cover;
+}
+.cardapioImg5{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/caixapresente.png");
+    background-size: cover;
+}
+.cardapioImg6{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/centodedoces.png");
+    background-size: cover;
+}
+.cardapioImg7{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/bolocenoura.png");
+    background-size: cover;
+}
+.cardapioImg8{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/bolochoco.png");
+    background-size: cover;
+}
+.cardapioImg9{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag1/bolomanteiga.png");
+    background-size: cover;
+}
+.cardapioImg10{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/brownie1.jpg");
+    background-size: cover;
+}
+.cardapioImg11{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/browniebrigadeiro.jpeg");
+    background-size: cover;
+}
+.cardapioImg12{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/brownienutella.jpg");
+    background-size: cover;
+}
+.cardapioImg13{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/brownieprestigio.jpg");
+    background-size: cover;
+}
+.cardapioImg14{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/bolodepote-brigadeiro.jpg");
+    background-size: cover;
+}
+.cardapioImg15{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/bolodepote-red.jpg");
+    background-size: cover;
+}
+.cardapioImg16{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/bolodepote-oreo.webp");
+    background-size: cover;
+}
+.cardapioImg17{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/alfajor.jpg");
+    background-size: cover;
+}
+.cardapioImg18{
+    height: 80%;
+    background-image: url("imagens/cardapio/pag2/paodemel.jpg");
+    background-size: cover;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.botao a{
+    margin: 1em;
+}
+
+/* Contato */
+.contato-secao1 h3{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+form label{
+    display: inline-block;
+    width: 7em;
+    text-align: right;
+}
+form input, form textarea{
+    margin: 1em;
+    width: 25em;
+    height: 1.5em;
+    background-color: #FEFFF5;
+    border: 1px solid #40190E;
+    border-radius: 1em;
+    padding: 0.5em;
+    vertical-align: middle;
+}
+form textarea{
+    height: 8em;
+}
+form input[type="submit"]{
+    height: 3em;
+    width: 12em;
+    background-color: #40190E;
+    color: #E7E8DF;
+    border-radius: 1.3em;
+    font-family: 'Raleway', sans-serif;;
+}
+form input[type=submit]:hover{
+    cursor: pointer;
+}
+.contato-secao2{
+    text-align: center;
+}
+.contato-secao2 img{
+    vertical-align: middle;
+    margin: 0.5em;
+}
+main > h3{
+    text-align: center;
+}
+
+/* Pascoa */
+.pascoa{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.pascoa h3{
+    margin-bottom: 1em;
+    font-size: 2.2em;
+    color:#38160C;
+}
+.pascoa p{
+    font-size: 1.8em;
+}
+.pascoa img{
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+div p a:hover, a:hover{
+    text-decoration: underline;
+}

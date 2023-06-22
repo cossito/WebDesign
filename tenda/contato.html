@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tenda do Brigadeiro</title>
+        <link rel="stylesheet" href="principal.css" />
+    </head>
+    <body>
+        <header>
+    <div>
+      <h1>
+        <a href="index.html"><img src="imagens/logo.png" width="200px" /></a>
+      </h1>
+      <nav>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="">Pedidos</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+        <main>
+            <h2>Contato</h2>
+            <section class="contato-secao1">
+                <h3>Entre em contato com a gente</h3>
+                <form>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone">
+                    </div>
+                    <div class="formu">
+                        <label for="tipo">Tipo:</label>
+                        <input type="text" list="tipos" id="tipo"/>
+                        <datalist id="tipos">
+                            <option>Reclamação</option>
+                            <option>Elogio</option>
+                            <option>Sugestão</option>
+                            <option>Outro</option>
+                        </datalist>
+                    </div>
+                    <div class="formu">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </form>
+            </section>
+
+            <h2>Redes sociais e telefone</h2>
+            <section class="contato-secao2">
+              <p><img src="imagens/whatsapp.png" alt="logo do whatsapp" /><b>+55 (84) 99703-9895</b></p>
+              <p>Disponível entre 8h e 19h de segunda a sábado</p>
+              <p><img src="imagens/instagram.png" alt="logo do instagram" /><b>tendadobrigadeiro</b></p>
+              <p>Disponível entre 11h e 18h de segunda a sexta</p>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>©Copyright 2022. Tenda do Brigadeiro</p>
+                <ul>
+                <li><a href="#"><img src="imagens/instagram.png" height="20" alt="logo do instagram" />tendadobrigadeiro</a></li>
+                <li><a href="#"><img src="imagens/whatsapp.png"  height="20" alt="logo do whatsapp" />+55 (84) 99703-9895</a></li>
+                </ul>
+            </div>
+        
+        </footer>
+    </body>
+</html>
