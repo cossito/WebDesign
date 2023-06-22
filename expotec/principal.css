@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 2em 0;
+    justify-content: space-between;
+    background-image: url(imagens/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover, 100% 100%;
+    background-color: purple;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+header>div{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+ol{
+    display: flex;
+}
+ol li{
+    margin: 1em;
+}
+ol li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+form{
+    display: flex;
+    align-items: center;
+    margin: 2em auto 0.5em auto;
+    padding: 0 0 0 2em;
+}
+form div{
+    display: flex;
+    align-items: center;
+}
+form div input[type=text]{
+    width: 50em;
+    padding: 1em 1em 1em 3em;
+    border: none;
+    border-radius: 0.5em;
+}
+form div input[type=image]{
+    position: absolute;
+    padding: 1em;
+}
+main{
+    background-color: purple;
+}
+section:nth-child(1){
+    display: flex;
+    flex-wrap: wrap;
+    width: 55em;
+    align-items: center;
+    margin: 0 auto;
+    padding: 19em 3em 3em 3em;
+}
+main section div{
+    background-color: whitesmoke;
+    width: 25em;
+    height: 15em;
+    margin: 1em;
+    border-radius: 1em;
+}
+section:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    background-color: #ffed26;
+    padding: 3em;
+    align-items: center;
+}
+h2{
+    color: rgba(0,0,0,53%);
+    font-size: 9em;
+}
+section:nth-child(2) figure{
+    position: absolute;
+    padding: 3em 0 0 0;
+}
+section:nth-child(3){
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+}
+section:nth-child(3) ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75em;
+}
+section:nth-child(3) ul li{
+    margin: 3em;
+}
+footer{
+    display: flex;
+    background-image: url(imagens/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover, 100% 100%;
+    background-color: purple;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+footer div{
+    display: flex;
+}
+footer figure{
+    margin: 0.4em;
+}
+button{
+    background: none;
+    border: none;
+    display: none;
+    padding: 0 0.4em 0 0;
+}
+button img{
+    width: 5em;
+}
+ol#menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: whitesmoke;
+    border: 0.5em solid purple;
+    border-radius: 0.5em;
+    right: 2.3em;
+    top: 6em;
+}
+ol#menu li a{
+    color: black;
+}
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 540px){
+    header{
+        width: 31em;
+    }
+    h1 a img{
+        width: 10em;
+    }
+    header ol{
+        display: none;
+    }
+    button{
+        display: block;
+    }
+    form div input[type=text]{
+        width: 30em;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section:nth-child(1){
+        padding: 16em 0 3em 3em;
+    }
+    section:nth-child(2){
+        width: 100%;
+    }
+    h2{
+        font-size: 3em;
+    }
+    section:nth-child(2) figure{
+        padding: 0.2em 0 0 0;
+    }
+    section:nth-child(2) figure img{
+        width: 4.5em;
+    }
+    section:nth-child(3){
+        align-items: center;
+        padding-right: 0;
+    }
+    section:nth-child(3) ul{
+        width: 25em;
+    }
+}
+
+
+/* ANIMAÇÕES */
+
+header{
+    animation-name: entra-header;
+    animation-duration: 0.5s;
+}
+@keyframes entra-header{
+    from{
+        filter: opacity(0%);
+    }
+    to{
+        filter: opacity(100%);
+    }
+}
+section:nth-child(1){
+    animation-name: entra-section1;
+    animation-duration: 0.6s;
+}
+@keyframes entra-section1{
+    from{
+        padding-bottom: 50em;
+    }
+    to{
+        padding-bottom: 3em;
+    }
+}
+section:nth-child(2) figure{
+    animation-name: mouse;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+@keyframes mouse{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+nav div ol li a:hover{
+    text-decoration: underline;
+}
+section:nth-child(3) ul li{
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease;
+}
+section:nth-child(3) ul li:hover{
+    transform: scale(1.1);
+}

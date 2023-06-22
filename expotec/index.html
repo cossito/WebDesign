@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>EXPOTEC</title>
+        <link rel=stylesheet href="principal.css" />
+        <script>
+            function abrir() {
+                if (document.getElementById('menu').style.display == 'flex')
+                    document.getElementById('menu').style.display = 'none';
+                else
+                    document.getElementById('menu').style.display = 'flex';
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a href="">
+                        <img src="imagens/nova logo (1) 1.png" />
+                    </a>
+                </h1>
+                <nav>
+                    <div>
+                        <ol>
+                            <li><a href="">Notícias</a></li>
+                            <li><a href="">Programação</a></li>
+                            <li><a href="">Palestrantes</a></li>
+                            <li><a href="">Agenda Cultural</a></li>
+                            <li><a href="">Contato</a></li>
+                        </ol>
+                        <button onclick="abrir()"><img href="" src="imagens/image.png"/></button>
+                    </div>
+                </nav>
+            </div>
+            <ol id="menu">
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Programação</a></li>
+                <li><a href="">Palestrantes</a></li>
+                <li><a href="">Agenda Cultural</a></li>
+                <li><a href="">Contato</a></li>
+            </ol>
+            <form>
+                <div>
+                    <input type="image" src="imagens/magnifying-glass 1.png">
+                    <input type="text" list="pesquisas" id="pesquisa">
+                    <datalist id="pesquisas">
+                        <option>ifrn</option>
+                        <option>preço do chá verde</option>
+                        <option>como consertar uma calculadora</option>
+                        <option>927594jf09mvi</option>
+                    </datalist>
+                </div>
+            </form>
+        </header>
+        <main>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+            <section>
+                <h2>Agenda Cultural</h2>
+                <figure>
+                    <img src="imagens/click (1) 1.png"/>
+                </figure>
+            </section>
+            <section>
+                <ul>
+                    <li><img src="imagens/Mask group (3).png"/></li>
+                    <li><img src="imagens/Mask group (4).png"/></li>
+                    <li><img src="imagens/Mask group (5).png"/></li>
+                    <li><img src="imagens/Mask group (3).png"/></li>
+                    <li><img src="imagens/Mask group (2).png"/></li>
+                    <li><img src="imagens/Mask group (1).png"/></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <figure>
+                <img src="imagens/nova logo (1) 1.png" width="200em"/>
+            </figure>
+            <div>
+                <figure>
+                    <img src="imagens/image 1.png" width="156em"/>
+                </figure>
+                <figure>
+                    <img src="imagens/image 2.png" width="150em"/>
+                </figure>
+            </div>
+        </footer>
+    </body>
+</html>
