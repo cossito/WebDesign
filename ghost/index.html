@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ghost</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="principal.css" />
+        <script>
+            function abrir(){
+                if (document.getElementById('menu').style.visibility == 'visible') 
+                    document.getElementById('menu').style.visibility = 'hidden';
+                else 
+                    document.getElementById('menu').style.visibility = 'visible';
+                }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="index.html"><img src="imagens/ghost-logo.png" /></a>
+            </h1>
+            <nav>
+                <div>
+                    <ol>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Sobre nós</a></li>
+                        <li><a href="">Eventos</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ol>
+                    <button onclick="abrir()"><img src="imagens/menu-icon.svg" width="40px"/></button>
+                </div>
+                <ol id="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="">Eventos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>NOVIDADES</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo laboriosam in, ipsam animi voluptatum rerum consectetur saepe, numquam aut atque enim corrupti molestiae accusamus magnam vitae. Praesentium perferendis natus ullam!</p>
+                <img src="imagens/cover-13.jpeg" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ex dolore, soluta debitis earum quidem asperiores sit maxime, voluptates odit nam eos rerum dolor adipisci quasi pariatur deleniti quia saepe!</p>
+            </section>
+            <aside>
+                <h2>ENQUETE</h2>
+                <form>
+                    <div>
+                        <span>Qual sua fantasia de halloween preferida?</span>
+                        <label><input type="radio" name="program" value="fantasma" /> Fantasma</label>
+                        <label><input type="radio" name="program" value="vampiro" /> Vampiro</label>
+                        <label><input type="radio" name="program" value="zumbi" /> Zumbi</label>
+                        <label><input type="radio" name="program" value="outro" /> Outro</label>
+                    </div>
+                    <div>
+                        <span>Como foi a sua experiência com o grupo?</span>
+                        <label><input type="radio" name="pesquisa" value="boa" /> Boa</label>
+                        <label><input type="radio" name="pesquisa" value="mediana" /> Mediana</label>
+                        <label><input type="radio" name="pesquisa" value="ruim" /> Ruim</label>
+                    </div>
+                    <input type="submit" value="Enviar" />
+                </form>
+            </aside>
+        </main>
+        <footer>
+            <p>©Copyright 2022.  ghost.</p>
+        </footer>
+    </body>
+</html>
